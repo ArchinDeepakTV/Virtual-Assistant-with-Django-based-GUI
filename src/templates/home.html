@@ -1,0 +1,24 @@
+{% extends 'base.html' %} {%block content%}
+
+<div class="flex-container">
+  <img src="{{img}}" alt="{{names}}" />
+
+  <divAbout>
+    <b>
+      <h2>{{names | upper}}</h2>
+      <p>{{about}}</p>
+    </b>
+  </divAbout>
+
+  <divXtra>
+    <b>
+      <h2>People Also Search For</h2>
+
+      {%for questions in people_ask_for%}
+      <l1>{{questions}} </l1> <br />
+      {%endfor%}
+    </b>
+  </divXtra>
+</div>
+
+{%endblock%}

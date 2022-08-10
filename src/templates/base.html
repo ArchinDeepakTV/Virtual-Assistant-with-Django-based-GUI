@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        background-color: black;
+      }
+
+      .flex-container > img {
+        float: left;
+        width: 40%;
+        height: 98.5vh;
+        object-fit: cover;
+      }
+
+      .flex-container > divAbout {
+        float: center;
+        font-size: 24px;
+        background: yellow;
+        width: 40%;
+        height: 98.5vh;
+        text-align: center;
+      }
+
+      .flex-container > divXtra {
+        float: right;
+        font-size: 20px;
+        background: grey;
+        width: 20%;
+        height: 98.5vh;
+        text-align: center;
+      }
+
+      {% comment %} body {
+        background-image: url("https://cdn.discordapp.com/attachments/974208484532969522/975276878027980840/wallpaper2you_460615.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      } {% endcomment %}
+    </style>
+  </head>
+  <title>{{about_name | upper}}</title>
+  <body>
+    {%block content%} replaced {%endblock%}
+  </body>
+  <h1></h1>
+</html>
